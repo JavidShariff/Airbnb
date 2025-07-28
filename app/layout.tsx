@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito} from "next/font/google";
 import Navbar from "@/app/components/Navbar/Navbar"
 import "./globals.css";
+import RegisterModel from "./components/Model/RegisterModel";
 
 
 const font = Nunito({
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className = {font.className}>
+        <RegisterModel/>
         <Navbar/>
         {children}
       </body>

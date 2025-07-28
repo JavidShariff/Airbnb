@@ -7,7 +7,9 @@ interface MenuItemProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({onClick,label}) => {
   return (
-    <div className="
+    <div
+    onClick={onClick} 
+    className="
     hover:bg-neutral-300
     transition
     font-semibold
